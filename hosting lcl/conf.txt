@@ -1,0 +1,7 @@
+/*Run inside the project folder*/
+
+python3 -m http.server 8080
+
+/*Run at home*/
+
+ngrok http 5500
