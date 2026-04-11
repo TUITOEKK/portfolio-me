@@ -71,7 +71,62 @@ new Typed('.typing', {
 
   mobileOverlay.addEventListener('click', closeMobileNav);
 })();
+// ===== SERVICES READMORE BUTTON =====
+(function () {
+  let activeService = null;
 
+  function collapseService(card) {
+    if (!card) return;
+    const p = card.querySelector('.service-body p');
+    const btn = card.querySelector('.service-read-btn');
+    p.classList.remove('expanded');
+    btn.textContent = 'Read more ↓';
+    card.classList.remove('expanded');
+    activeService = null;
+  }
+
+  document.querySelectorAll('.service-card').forEach(function (card) {
+    const btn = card.querySelector('.service-read-btn');
+    const p = card.querySelector('.service-body p');
+
+    // Auto-hide button if text fits in 3 lines
+    const lineHeight = parseFloat(getComputedStyle(p).lineHeight);
+    if (p.scrollHeight <= Math.ceil(lineHeight * 3) + 2) {
+      btn.classList.add('hidden');
+      p.style.webkitLineClamp = 'unset';
+      p.style.overflow = 'visible';
+      p.style.display = 'block';
+    }
+
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      const isExpanded = p.classList.contains('expanded');
+
+      if (activeService && activeService !== card) collapseService(activeService);
+
+      if (isExpanded) {
+        collapseService(card);
+      } else {
+        p.classList.add('expanded');
+        btn.textContent = 'Read less ↑';
+        card.classList.add('expanded');
+        activeService = card;
+      }
+    });
+
+    card.addEventListener('mouseleave', function () {
+      collapseService(card);
+    });
+  });
+
+  document.addEventListener('click', function () {
+    collapseService(activeService);
+  });
+
+  window.addEventListener('scroll', function () {
+    collapseService(activeService);
+  }, { passive: true });
+})();
 
 // ===== POPUP CLOSE BUTTONS =====
 function closePopup() {
