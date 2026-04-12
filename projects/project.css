@@ -125,6 +125,13 @@
   }
 }
 
+@media (max-width: 360px) {
+  .filter-btn {
+    font-size: 9px;
+    padding: 6px 9px;
+  }
+}
+
 .filter-btn.active .count {
   background: rgba(0,0,0,0.2);
   color: #010e1b;
