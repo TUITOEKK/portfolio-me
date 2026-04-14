@@ -1,265 +1,372 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <link rel="icon" type="image/png" href="../favicon.png"/>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Moses Tuitoek</title>
+  <head>
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Moses Tuitoek</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="../assets/css/style.css" rel="stylesheet">
-  <link href="project.css" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="project.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
+    <!-- ===== MOBILE NAV ===== -->
+    <button
+      class="mobile-nav-toggle"
+      id="mobileNavToggle"
+      aria-label="Toggle navigation"
+    >
+      <i class="icofont-navigation-menu" id="mobileNavIcon"></i>
+    </button>
 
-<!-- ===== MOBILE NAV ===== -->
-<button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
-  <i class="icofont-navigation-menu" id="mobileNavIcon"></i>
-</button>
-
-<nav class="mobile-nav" id="mobileNav">
-  <ul>
-    <li><a href="../index.html#home">Home</a></li>
-    <li><a href="../index.html#about">About</a></li>
-    <li><a href="../index.html#services">Services</a></li>
-    <li><a href="project.html" class="active-page">Projects</a></li>
-    <li><a href="../index.html#skills">Skills</a></li>
-    <li><a href="../index.html#contacts">Contact</a></li>
-  </ul>
-</nav>
-<div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
-
-<!-- ===== HEADER / NAVBAR ===== -->
-<header id="header">
-  <div class="container">
-    <a href="../index.html" class="nav-logo">Portfolio<span>.</span></a>
-    <nav class="nav-menu">
+    <nav class="mobile-nav" id="mobileNav">
       <ul>
         <li><a href="../index.html#home">Home</a></li>
         <li><a href="../index.html#about">About</a></li>
         <li><a href="../index.html#services">Services</a></li>
-        <li class="active"><a href="project.html">Projects</a></li>
+        <li><a href="project.html" class="active-page">Projects</a></li>
         <li><a href="../index.html#skills">Skills</a></li>
         <li><a href="../index.html#contacts">Contact</a></li>
       </ul>
     </nav>
-  </div>
-</header>
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
 
-<!-- ===== PROJECTS PAGE ===== -->
-<div class="projects-page">
-  <div class="container">
-
-    <!-- Breadcrumb -->
-    <div class="breadcrumb">
-      <a href="../index.html">Home</a>
-      <i class="ri-arrow-right-s-line"></i>
-      <span>Featured projects</span>
-    </div>
-
-    <!-- Filter bar -->
-    <div class="filter-bar">
-      <button class="filter-btn active" data-filter="all">All </button>
-      <button class="filter-btn" data-filter="data">Data </button>
-      <button class="filter-btn" data-filter="ml">ML / AI</button>
-      <button class="filter-btn" data-filter="web">Web App </button>
-      <button class="filter-btn" data-filter="mobile">Mobile </button>
-    </div>
-
-    <!-- Result count -->
-    <div class="projects-stats">
-      Showing <strong id="visibleCount">9</strong> of <strong>9</strong> projects
-    </div>
-
-    <!-- Projects grid -->
-    <div class="all-proj-grid" id="projGrid">
-
-      <!-- 1 -->
-      <div class="proj-card" data-category="web">
-        <div class="proj-visual">
-          <i class="proj-icon ri-search-eye-line"></i>
-        </div>
-  <div class="proj-body">
-    <h4>Job Scraper</h4>
-    <p>Automated scraper that collects real-time job postings from multiple platforms via an interactive Streamlit dashboard.</p>
-    <div class="proj-tags">
-      <span>Python</span><span>Selenium</span><span>Streamlit</span><span>Web Scraping</span>
-    </div>
-    <div class="proj-actions">
-      <span class="proj-btn-live">view more &nbsp;→</span>
-      <a href="https://github.com/TUITOEKK/Job-Search-Web-Scraping" target="_blank" rel="noopener noreferrer" class="proj-btn-details">Details</a>
-    </div>
-        </div>
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header id="header">
+      <div class="container">
+        <a href="../index.html" class="nav-logo">Portfolio<span>.</span></a>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#services">Services</a></li>
+            <li class="active"><a href="project.html">Projects</a></li>
+            <li><a href="../index.html#skills">Skills</a></li>
+            <li><a href="../index.html#contacts">Contact</a></li>
+          </ul>
+        </nav>
       </div>
+    </header>
 
-      <!-- 2 -->
-      <div class="proj-card" data-category="mobile">
-        <div class="proj-visual">
-          <i class="proj-icon ri-map-pin-user-line"></i>
+    <!-- ===== PROJECTS PAGE ===== -->
+    <div class="projects-page">
+      <div class="container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Featured projects</span>
         </div>
- <div class="proj-body">
-    <h4>StaffTrack</h4>
-    <p>A mobile app for managing field workers. Staff log tasks and location without internet, and data syncs automatically when back online. Managers can monitor all activity anytime.</p>
-    <div class="proj-tags">
-      <span>Flutter</span><span>Firebase</span><span>Offline Sync</span><span>GPS Tracking</span>
-    </div>
-    <div class="proj-actions">
-      <span class=" proj-btn-live">view more &nbsp;→</span>
-      <a href="https://github.com/TUITOEKK/StaffTrack" target="_blank" rel="noopener noreferrer" class="proj-btn-details">Details</a>
-    </div>>
-        </div>
-      </div>
 
-      <!-- 3 -->
-      <div class="proj-card" data-category="web">
-        <div class="proj-visual">
-          <i class="proj-icon ri-message-3-line"></i>
+        <!-- Filter bar -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="data">Data</button>
+          <button class="filter-btn" data-filter="ml">ML / AI</button>
+          <button class="filter-btn" data-filter="web">Web App</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
         </div>
-  <div class="proj-body">
-    <h4>InsightHub-Analyser </h4>
-    <p>A web app that uses AI to sort social media comments and give insights. Creators can track engagement and get content suggestions based on real audience behavior.</p>
-    <div class="proj-tags">
-      <span>Django</span><span>Python</span><span>HTML/CSS</span><span>JavaScript</span><span>AI</span>
-    </div>
-    <div class="proj-actions">
-      <span class="proj-btn-live">view more &nbsp;→</span>
-      <a href="https://github.com/TUITOEKK/InsightHub-Analyser" target="_blank" rel="noopener noreferrer" class="proj-btn-details">Details</a>
-    </div>
-        </div>
-      </div>
 
-      <!-- 4 -->
-      <div class="proj-card" data-category="data">
-        <div class="proj-visual">
-          <span class="proj-category">Data</span>
-          <i class="proj-icon ri-film-line"></i>
+        <!-- Result count -->
+        <div class="projects-stats">
+          Showing <strong id="visibleCount">9</strong> of
+          <strong>9</strong> projects
         </div>
-   <div class="proj-body">
-    <h4>Cooking Fuel Consumer Analysis</h4>
-    <p>A data analysis project for a cooking fuel retailer. Used machine learning to group customers by behavior, uncovering insights to improve targeted marketing and supply chain decisions.</p>
-    <div class="proj-tags">
-      <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Scikit-learn</span><span>Power BI</span><span>PowerPoint</span>
-    </div>
-    <div class="proj-actions">
-      <span class="proj-btn-live">view more &nbsp;→</span>
-      <a href="https://github.com/TUITOEKK/Cooking-fuel-Data-Insights" target="_blank" rel="noopener noreferrer" class="proj-btn-details">Details</a>
-    </div>
-        </div>
-      </div>
 
-      <!-- 5 -->
-      <div class="proj-card" data-category="data">
-        <div class="proj-visual">
-          <i class="proj-icon ri-fire-line"></i>
-        </div>
-        <div class="proj-body">
-          <h4>Resume Section Classifier</h4>
-          <p>NLP model that automatically segments and classifies sections of a resume using transformer-based text classification with 94% accuracy.</p>
-          <div class="proj-tags">
-            <span>BERT</span><span>PyTorch</span><span>Python</span>
+        <!-- Projects grid -->
+        <div class="all-proj-grid" id="projGrid">
+          <!-- 1 -->
+          <div class="proj-card" data-category="web">
+            <div class="proj-visual">
+              <i class="proj-icon ri-search-eye-line"></i>
+            </div>
+            <div class="proj-body">
+              <h4>Job Scraper</h4>
+              <p>
+                Automated scraper that collects real-time job postings from
+                multiple platforms via an interactive Streamlit dashboard.
+              </p>
+              <div class="proj-tags">
+                <span>Python</span><span>Selenium</span><span>Streamlit</span
+                ><span>Web Scraping</span>
+              </div>
+              <div class="proj-actions">
+                <span class="proj-btn-live">view more &nbsp;→</span>
+                <a
+                  href="https://github.com/TUITOEKK/Job-Search-Web-Scraping"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-btn-details"
+                  >Details</a>
+                
+              </div>
+            </div>
           </div>
-          <div class="proj-actions">
-            <span class="proj-btn-live">view more &nbsp;→</span>
-            <a href="https://github.com/TUITOEKK/Resume-Classifier" target="_blank" rel="noopener noreferrer" class="proj-btn-details">Details</a>
+
+          <!-- 2 -->
+          <div class="proj-card" data-category="mobile">
+            <div class="proj-visual">
+              <i class="proj-icon ri-map-pin-user-line"></i>
+            </div>
+            <div class="proj-body">
+              <h4>StaffTrack</h4>
+              <p>
+                A mobile app for managing field workers. Staff log tasks and
+                location without internet, and data syncs automatically when
+                back online. Managers can monitor all activity anytime.
+              </p>
+              <div class="proj-tags">
+                <span>Flutter</span><span>Firebase</span
+                ><span>Offline Sync</span><span>GPS Tracking</span>
+              </div>
+              <div class="proj-actions">
+                <span class="proj-btn-live">view more &nbsp;→</span>
+                <a
+                  href="https://github.com/TUITOEKK/StaffTrack"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-btn-details"
+                  >Details</a
+                >
+              </div>
+              >
+            </div>
           </div>
+
+          <!-- 3 -->
+          <div class="proj-card" data-category="web">
+            <div class="proj-visual">
+              <i class="proj-icon ri-message-3-line"></i>
+            </div>
+            <div class="proj-body">
+              <h4>InsightHub-Analyser</h4>
+              <p>
+                A web app that uses AI to sort social media comments and give
+                insights. Creators can track engagement and get content
+                suggestions based on real audience behavior.
+              </p>
+              <div class="proj-tags">
+                <span>Django</span><span>Python</span><span>HTML/CSS</span
+                ><span>JavaScript</span><span>AI</span>
+              </div>
+              <div class="proj-actions">
+                <span class="proj-btn-live">view more &nbsp;→</span>
+                <a
+                  href="https://github.com/TUITOEKK/InsightHub-Analyser"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-btn-details"
+                  >Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="proj-card" data-category="data">
+            <div class="proj-visual">
+              <i class="proj-icon ri-film-line"></i>
+            </div>
+            <div class="proj-body">
+              <h4>Cooking Fuel Consumer Analysis</h4>
+              <p>
+                A data analysis project for a cooking fuel retailer. Used
+                machine learning to group customers by behavior, uncovering
+                insights to improve targeted marketing and supply chain
+                decisions.
+              </p>
+              <div class="proj-tags">
+                <span>Python</span><span>Pandas</span><span>Matplotlib</span
+                ><span>Scikit-learn</span><span>Power BI</span
+                ><span>PowerPoint</span>
+              </div>
+              <div class="proj-actions">
+                <span class="proj-btn-live">view more &nbsp;→</span>
+                <a
+                  href="https://github.com/TUITOEKK/Cooking-fuel-Data-Insights"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-btn-details"
+                  >Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="proj-card" data-category="data">
+            <div class="proj-visual">
+              <i class="proj-icon ri-fire-line"></i>
+            </div>
+            <div class="proj-body">
+              <h4>Resume Section Classifier</h4>
+              <p>
+                NLP model that automatically segments and classifies sections of
+                a resume using transformer-based text classification with 94%
+                accuracy.
+              </p>
+              <div class="proj-tags">
+                <span>BERT</span><span>PyTorch</span><span>Python</span>
+              </div>
+              <div class="proj-actions">
+                <span class="proj-btn-live">view more &nbsp;→</span>
+                <a
+                  href="https://github.com/TUITOEKK/Resume-Classifier"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-btn-details"
+                  >Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="proj-card" data-category="ml">
+            <div class="proj-visual">
+              <i class="proj-icon ri-file-text-line"></i>
+            </div>
+            <div class="proj-body">
+              <h4>Resume Section Classifier</h4>
+              <p>
+                NLP model that automatically segments and classifies sections of
+                a resume using transformer-based text classification with 94%
+                accuracy.
+              </p>
+              <div class="proj-tags">
+                <span>BERT</span><span>PyTorch</span><span>Python</span>
+              </div>
+              <div class="proj-actions">
+                <span class="proj-btn-live">view more &nbsp;→</span>
+                <a
+                  href="https://github.com/TUITOEKK/Resume-Classifier"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-btn-details"
+                  >Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="proj-card" data-category="data">
+            <div class="proj-visual">
+              <i class="proj-icon ri-bar-chart-box-line"></i>
+            </div>
+            <div class="proj-body">
+              <h4>Retail Ad Campaign Analysis</h4>
+              <p>
+                A Python project analyzing retail ad campaign performance across
+                reach, engagement, and conversions. Key findings are presented
+                in a clean PowerPoint report for stakeholder review.
+              </p>
+              <div class="proj-tags">
+                <span>Python</span><span>Pandas</span><span>Matplotlib</span
+                ><span>Seaborn</span><span>PowerPoint</span>
+              </div>
+              <div class="proj-actions">
+                <span class="proj-btn-live">view more &nbsp;→</span>
+                <a
+                  href="https://github.com/TUITOEKK/Retail-Ad-campaign-analysis"
+                  class="proj-btn-details"
+                  >Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="proj-card" data-category="data">
+            <div class="proj-visual">
+              <i class="proj-icon ri-team-line"></i>
+            </div>
+            <div class="proj-body">
+              <h4>HR Analytics Dashboard</h4>
+              <p>
+                HR analytics dashboard that visualises workforce trends and
+                patterns, empowering HR teams to make informed decisions on
+                talent management and performance.
+              </p>
+              <div class="proj-tags">
+                <span>Python</span><span>Pandas</span><span>Matplotlib</span
+                ><span>Seaborn</span><span>Dashboard</span>
+              </div>
+              <div class="proj-actions">
+                <span class="proj-btn-live">view more &nbsp;→</span>
+                <a
+                  href="https://github.com/TUITOEKK/HR-Analytics-Dashboard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-btn-details"
+                  >Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 9 -->
+          <div class="proj-card" data-category="web">
+            <div class="proj-visual">
+              <i class="proj-icon ri-price-tag-3-line"></i>
+            </div>
+            <div class="proj-body">
+              <h4>EcomPriceStream</h4>
+              <p>
+                ETL pipeline that scrapes two e-commerce platforms, processes
+                data via Airflow, and lets users compare prices live through a
+                web interface.
+              </p>
+              <div class="proj-tags">
+                <span>Python</span><span>Playwright</span
+                ><span>Apache Airflow</span><span>Django</span
+                ><span>HTML/CSS</span><span>JavaScript</span>
+              </div>
+              <div class="proj-actions">
+                <span class="proj-btn-live">view more &nbsp;→</span>
+                <a
+                  href="https://github.com/TUITOEKK/EcomPriceStream-"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-btn-details"
+                  >Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Empty state -->
+          <div class="empty-state" id="emptyState">
+            <i class="ri-folder-open-line"></i>
+            <p>No projects found in this category.</p>
+          </div>
+        </div>
+        <!-- /grid -->
+
+        <!-- Back button -->
+        <div class="back-row">
+          <a href="../index.html#portfolio" class="btn-back">
+            <i class="ri-arrow-left-line"></i> Back to Portfolio
+          </a>
         </div>
       </div>
-
-      <!-- 6 -->
-      <div class="proj-card" data-category="ml">
-        <div class="proj-visual">
-          <i class="proj-icon ri-file-text-line"></i>
-        </div>
-        <div class="proj-body">
-          <h4>Resume Section Classifier</h4>
-          <p>NLP model that automatically segments and classifies sections of a resume using transformer-based text classification with 94% accuracy.</p>
-          <div class="proj-tags">
-            <span>BERT</span><span>PyTorch</span><span>Python</span>
-          </div>
-          <div class="proj-actions">
-            <span class="proj-btn-live">view more &nbsp;→</span>
-            <a href="https://github.com/TUITOEKK/Resume-Classifier" target="_blank" rel="noopener noreferrer" class="proj-btn-details">Details</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 7 -->
-      <div class="proj-card" data-category="data">
-        <div class="proj-visual">
-          <i class="proj-icon ri-bar-chart-box-line"></i>
-        </div>
-  <div class="proj-body">
-    <h4>Retail Ad Campaign Analysis</h4>
-    <p>A Python project analyzing retail ad campaign performance across reach, engagement, and conversions. Key findings are presented in a clean PowerPoint report for stakeholder review.</p>
-    <div class="proj-tags">
-      <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>PowerPoint</span>
     </div>
-    <div class="proj-actions">
-      <span class="proj-btn-live">view more &nbsp;→</span>
-      <a href="https://github.com/TUITOEKK/Retail-Ad-campaign-analysis" class="proj-btn-details">Details</a>
-    </div>
-        </div>
-      </div>
 
-      <!-- 8 -->
-      <div class="proj-card" data-category="data">
-        <div class="proj-visual">
-          <i class="proj-icon ri-team-line"></i>
-        </div>
-        <div class="proj-body">
-          <h4>HR Analytics Dashboard</h4>
-          <p>HR analytics dashboard that visualises workforce trends and patterns, empowering HR teams to make informed decisions on talent management and performance.</p>
-          <div class="proj-tags">
-            <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>Dashboard</span>
-          </div>
-          <div class="proj-actions">
-            <span class="proj-btn-live">view more &nbsp;→</span>
-            <a href="https://github.com/TUITOEKK/HR-Analytics-Dashboard" target="_blank" rel="noopener noreferrer" class="proj-btn-details">Details</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 9 -->
-      <div class="proj-card" data-category="web">
-        <div class="proj-visual">
-          <i class="proj-icon ri-price-tag-3-line"></i>
-        </div>
-        <div class="proj-body">
-          <h4>EcomPriceStream</h4>
-          <p>ETL pipeline that scrapes two e-commerce platforms, processes data via Airflow, and lets users compare prices live through a  web interface.</p>
-          <div class="proj-tags">
-            <span>Python</span><span>Playwright</span><span>Apache Airflow</span><span>Django</span><span>HTML/CSS</span><span>JavaScript</span>
-          </div>
-          <div class="proj-actions">
-            <span class="proj-btn-live">view more &nbsp;→</span>
-            <a href="https://github.com/TUITOEKK/EcomPriceStream-" target="_blank" rel="noopener noreferrer" class="proj-btn-details">Details</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Empty state -->
-      <div class="empty-state" id="emptyState">
-        <i class="ri-folder-open-line"></i>
-        <p>No projects found in this category.</p>
-      </div>
-
-    </div><!-- /grid -->
-
-    <!-- Back button -->
-    <div class="back-row">
-      <a href="../index.html#portfolio" class="btn-back">
-        <i class="ri-arrow-left-line"></i> Back to Portfolio
-      </a>
-    </div>
-
-  </div>
-</div>
-
-<script src="project.js"></script>
-</body>
+    <script src="project.js"></script>
+  </body>
 </html>
