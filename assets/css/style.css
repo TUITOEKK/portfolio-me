@@ -903,3 +903,19 @@ section .container { padding: 30px 20px; }
 /* typed cursor */
 .typed-cursor { opacity: 1; animation: blink 0.7s infinite; color: var(--green); }
 @keyframes blink { 50% { opacity: 0; } }
+
+/* ===== FOOTER ===== */
+#footer {
+  background: #010e1b;
+  border-top: 1px solid rgba(18, 214, 64, 0.15);
+  text-align: center;
+  padding: 20px;
+}
+
+#footer p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  color: #6c757d;
+  margin: 0;
+}
+/* ===== END FOOTER ===== */

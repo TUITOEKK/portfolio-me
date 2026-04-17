@@ -224,3 +224,5 @@ document.getElementById('contactForm').addEventListener('submit', async function
   btn.innerHTML = 'Send Message &nbsp;<i class="bx bx-send"></i>';
   btn.disabled = false;
 });
+// Footer year
+document.getElementById('footer-year').textContent = new Date().getFullYear();
