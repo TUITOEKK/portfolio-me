@@ -52,3 +52,5 @@ filterBtns.forEach(function (btn) {
     emptyState.style.display = visible === 0 ? 'block' : 'none';
   });
 });
+// Footer year
+document.getElementById('footer-year').textContent = new Date().getFullYear();
