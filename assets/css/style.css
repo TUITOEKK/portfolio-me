@@ -186,7 +186,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* second word in name gets green accent — matches reference */
-.hero-name span { color: var(--green); }
+.hero-name span { color: var(--white); }
 
 .hero-role {
   font-family: "Poppins", sans-serif;
